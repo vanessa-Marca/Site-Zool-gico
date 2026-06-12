@@ -1,0 +1,239 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial Narrow, sans-serif;
+    text-align: center;
+    color: whitesmoke;
+}
+
+header {
+    top: 0;
+    height: 120px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    background-image: url("../imagens/bg.svg");
+    z-index: 1;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 30%;
+    display: flex; 
+    flex-wrap: wrap;
+}
+
+li {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: moccasin;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+}
+
+h1 {
+    width: 70%;
+    font-size: 2.5rem;
+}
+
+img {
+    width: 100%;
+}
+
+main {
+    position: absolute;
+    top: 120px;
+    width: 100%; 
+    background: radial-gradient(circle, rgb(139, 69, 19), rgb(205, 133, 63));
+}
+
+h2 {
+    margin: 0;
+    font-size: 2rem;
+    text-shadow: 3px 3px rgb(160, 82, 45);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 10px auto;
+    box-sizing: border-box;
+    padding-bottom: 150px;
+}
+
+.galeria {
+    border-radius: 50%;
+    width: 30%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#end, #ing, #inf {
+    padding-top: 150px;
+}
+
+.item_end {
+    background-color: lightyellow;
+    color: sienna;
+    width: 80%;
+    margin: 15px;
+    border-radius: 10px;
+}
+
+.item_end img {
+    border-radius: 10px;
+}
+
+h3 {
+    text-transform: uppercase;
+    color: chocolate;
+}
+
+h4 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: brown;
+}
+
+p {
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 50px auto;
+    padding: 20px 20px 200px 20px;
+}
+
+label, #qtd, #cpf, .botao {
+    font-size: 1.25rem;
+    padding: 5px;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#qtd, #cpf, .botao {
+    font-size: inherit;
+    text-align: center;
+    border: none;
+    margin-bottom: 20px;
+}
+
+label, .botao {
+    background-color: rgb(255, 140, 0);
+    color: whitesmoke;
+}
+
+.quadro_animado {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    background-size: cover;
+    border-radius: 10px;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-name: muda_imagem;
+}
+
+@keyframes muda_imagem {
+    0% {background-image: url("../imagens/foto1.jpg");}
+    20% {background-image: url("../imagens/foto2.jpg");}
+    40% {background-image: url("../imagens/foto3.jpg");}
+    60% {background-image: url("../imagens/foto4.jpg");}
+    80% {background-image: url("../imagens/foto5.jpg");}
+    100% {background-image: url("../imagens/foto1.jpg");}
+}
+
+.texto_animado {
+    width: 80%;
+    margin: 20px auto;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 10px;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-name: trocar_cor;
+}
+
+@keyframes trocar_cor {
+    0% { background-color: navajowhite; color: saddlebrown; }
+    25% { background-color: peachpuff; color: coral; }
+    50% { background-color: darksalmon; color: maroon; } 
+    75% { background-color: darkkhaki; color: indianred; }
+    100% { background-color: navajowhite; color: saddlebrown; }
+}
+
+
+@media (min-width: 768px) {
+    header {
+        height: 70px;
+    }
+    ul {
+        width: 55%;
+    }
+    li {
+        width: 25%;
+    }
+    h1 {
+        width: 45%;
+        font-size: 3rem;
+    }
+    h2 {
+        font-size: 2.5rem;
+    }
+    a {
+        font-size: 1.5rem;
+    }
+    main {
+        top: 70px;
+    }
+    .galeria {
+       width: 16%;
+       padding: 30px; 
+       transition: border-radius 2s; 
+    }
+    .galeria:hover {
+       border-radius: 20%;
+    }
+    .item_end {
+       width: 25%;
+    }
+    form {
+      width: 50%;
+      margin-bottom: 160px;  
+    }
+    label {
+        width: 40%;
+        margin-bottom: 20px;
+    }
+    #qtd, #cpf, .botao {
+        width: 50%;
+    }
+    .botao:hover {
+       background-color: rgb(136, 70, 20); 
+    }
+    .quadro_animado {
+        width: 320px;
+        height: 320px;
+    }
+    .texto_animado {
+        width: 50%; 
+        font-size: 1.25rem;
+    }
+}

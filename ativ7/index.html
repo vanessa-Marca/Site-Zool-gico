@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilos/css.css"> 
+        <link rel="icon" href="imagens/zoo.png"> 
+    <title>Zoológico</title>
+</head>
+<body>
+   <header>
+        <ul>
+            <li><a href="#top">Home</a></li>
+            <li><a href="#end">Endereços</a></li>
+            <li><a href="#ing">Ingressos</a></li>
+            <li><a href="#inf">Informações</a></li>
+        </ul>
+    <h1>Zoológico</h1>
+</header>
+
+
+    <main>
+        <h2>Fotos</h2>
+
+        <div class="container">
+            <img src="imagens/foto1.jpg" alt="Capivara" class="galeria">
+            <img src="imagens/foto2.jpg" alt="Coala" class="galeria">
+            <img src="imagens/foto3.jpg" alt="Coruja" class="galeria">
+            <img src="imagens/foto4.jpg" alt="Rinoceronte" class="galeria">
+            <img src="imagens/foto5.jpg" alt="Tigre" class="galeria">
+            <img src="imagens/foto6.jpg" alt="Urso" class="galeria">
+            <img src="imagens/foto7.jpg" alt="Girafa" class="galeria">
+            <img src="imagens/foto8.jpg" alt="Tucano" class="galeria">
+        </div>
+
+        <h2 id="end">Endereços</h2>
+
+        <div class="container">
+            <div class="item_end">
+                <img src="imagens/guarulhos.jpg" alt="guarulhos">
+                <h3>guarulhos</h3>
+                <h4>09:00h às 16:30h</h4>
+                <p>Jardim Rosa de Franca</p>
+            </div>
+
+             <div class="item_end">
+                <img src="imagens/curitiba.jpg" alt="Curitiba">
+                <h3>Curitiba</h3>
+                <h4>10:00h às 16:00h</h4>
+                <p>Alto Boqueirão</p>
+            </div>
+
+             <div class="item_end">
+                <img src="imagens/brasilia.jpg" alt="Brasília">
+                <h3>Brasília</h3>
+                <h4>08:30h às 17:00h</h4>
+                <p>Asa Sul</p>
+            </div>
+
+        </div>
+
+        <h2 id="ing">Ingressos</h2>
+
+        <form method="get">
+            <label for="cpf">CPF</label>
+            <input type="text" id="cpf" name="cpf" maxlength="12" required>
+
+            <label for="qtd">Quantidade</label>
+            <input type="number" id="qtd" name="qtd" min="1" max="20" required>
+
+            <input type="submit" class="botao" value="Solicitar">
+        </form>
+
+        <h2 id="inf">Informações</h2>
+
+        <div class="container">
+            <div class="quadro_animado"></div>
+            <div class="texto_animado">
+                Zoológico é um empreendimento com a finalidade de criar, reproduzir e manter 
+                espécimes da fauna silvestre e exótica, em cativeiro ou em semiliberdade, expostos à 
+                visitação pública. A visita ao Zoológico não apenas amplia o conhecimento sobre a 
+                vida animal, mas também estimula o senso de responsabilidade e respeito pelos seres 
+                vivos e pela natureza como um todo.
+            </div>
+
+        </div>
+
+    </main>
+</body>
+</html>
